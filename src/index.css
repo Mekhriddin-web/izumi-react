@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* set default body styles */
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: #eee;
+  color: #000000;
+  font-family: 'Montserrat';
+  font-size: 100%;
+  line-height: normal;
+  text-size-adjust: 100%;
+}
+
+/* default class */
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+/* app */
+
+.app {
+  display: block;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+}
