@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState, AppThunk } from '../../app/store';
-import { fetchCount } from './filmsAPI';
+import { fetchFilms } from './filmsAPI';
 
 export interface FilmsState {
   value: number;

@@ -1,8 +1,8 @@
-const FilmItem = ({ img }) => {
+const FilmItem = () => {
   return (
     <div className='grid grid-cols-2 gap-4 mt-[32px]'>
       <div className='bg-white rounded-lg shadow-md'>
-        <img src={img} alt='...' className='w-[373] h-[179]' />
+        <img src='...' alt='...' className='w-[373] h-[179]' />
         <div className='px-[12px] py-[18px]'>
           <h2 className='leading-[28px] font-bold text-center'>
             Заголовок карточки

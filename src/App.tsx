@@ -11,7 +11,7 @@ function App() {
 
         <SearchButton />
 
-        <FilmItem img={''} />
+        <FilmItem />
       </div>
     </div>
   );
