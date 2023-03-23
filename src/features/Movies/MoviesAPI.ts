@@ -18,6 +18,9 @@ query ($search: String!) {
 }
 `;
 
+const API_TOKEN =
+  'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUwYmViZTdlZmQyMDYyMjA0MTM2NTY3ZDU5ODJkYTkwMzRjMGM2YjEyN2VjNDM5OTExZjk1ZTAyYTFhYWQ4ZmNlMTZiYWI4M2MyYWQzMjI2In0';
+
 export const fetchMovies = createAsyncThunk(
   'movies/fetchMovies',
   async (debouncedValue: string) => {
@@ -27,7 +30,7 @@ export const fetchMovies = createAsyncThunk(
         search: debouncedValue,
       },
       headers: {
-        Authorization: 'Bearer ' + import.meta.env.ANIME_TOKEN,
+        Authorization: 'Bearer ' + API_TOKEN,
       },
     });
     return res.data;

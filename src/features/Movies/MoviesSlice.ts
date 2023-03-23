@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { MovieState } from '../../app/types';
 import { fetchMovies } from './MoviesAPI';
 
-interface MoviesState {
+export interface MoviesState {
   movies: MovieState[];
   moviesError: string;
   perPage: number;
