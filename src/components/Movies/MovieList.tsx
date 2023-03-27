@@ -18,7 +18,7 @@ const MovieList = () => {
   }
 
   if (status === 'failed') {
-    return <p className='text-red mt-[32px]'>{error}asdasd</p>;
+    return <p className='text-red mt-[32px]'>{error}</p>;
   }
 
   return (
